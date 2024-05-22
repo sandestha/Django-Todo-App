@@ -22,4 +22,7 @@ def edit(request,pk):
     data = {'todo':todo_obj}
     return render(request,'edit.html',context=data)
 
-
+def delete(request,pk):
+    todo_obj = Todo.objects.get(id = pk)
+    todo_obj.delete()
+    return redirect('home')
