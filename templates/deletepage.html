@@ -49,6 +49,7 @@
                 <th scope="col">Task Name</th>
                 <th scope="col">Description</th>
                 <th scope="col">Status</th>
+                <th scope="col" colspan='2'>Actions</th>
             </tr>
             </thead>
             <tbody>
@@ -58,6 +59,7 @@
                 <td>{{todo.name}}</td>
                 <td>{{todo.description}}</td>
                 <td>{{todo.status}}</td>
+                <td><a href="{% url 'delete' pk=todo.id %}"><button type="button" class="btn btn-danger">DELETE</button></a></td>
             </tr>
             {% endfor %}
             </tbody>
