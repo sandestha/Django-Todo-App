@@ -2,6 +2,7 @@
 # Django Todo App
 
 It's a Django Todo App created in Python Django framework with HTML and CSS.
+This App has Login and Signup features
 
 
 
